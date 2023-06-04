@@ -5,7 +5,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 # Configuration options
 SECRET_KEY = 'your_secret_key'
-SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'app.db')
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://username:password@localhost/db_name'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 # Celery configuration
