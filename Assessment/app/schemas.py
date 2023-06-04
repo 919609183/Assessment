@@ -4,4 +4,10 @@ class UserSchema(Schema):
     username = fields.String(required=True)
     password = fields.String(required=True)
 
-    # ... other user fields if needed
+class CarSchema(Schema):
+    make = fields.String(required=True)
+    model = fields.String(required=True)
+    year = fields.String(required=True)
+    category = fields.String(required=True)
+
+   
